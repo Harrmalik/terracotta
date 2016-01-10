@@ -1,0 +1,62 @@
+<div id='m_menu' class="ui floating vertical inverted sidebar menu">
+  
+  <a class="item" >
+    <i class="right arrow icon"></i> Back
+  </a>
+      
+  <a class="item" ng-class="{ active: nav.isSelected(1) }" href ng-click="nav.selectPage(1)">
+    <i class="home icon"></i> Home
+  </a>
+
+  <a class="item" ng-class="{ active: nav.isSelected(2) }" href ng-click="nav.selectPage(2)">
+    <i class="food icon"></i> Menu
+  </a>
+
+  <a class="item" ng-class="{ active: nav.isSelected(3) }" href ng-click="nav.selectPage(3)">
+    <i class="user icon"></i> About
+  </a>
+
+  <a class="item" ng-class="{ active: nav.isSelected(4) }" href ng-click="nav.selectPage(4)">
+    <i class="mail icon"></i> Contact
+  </a>
+</div>
+
+<header>
+  <div id='mainHead'>
+    <div id='menu' class="ui fluid four item inverted pointing menu">
+      
+      <a class="item" ng-class="{ active: nav.isSelected(1) }" href ng-click="nav.selectPage(1)">
+        <i class="home icon"></i> Home
+      </a>
+
+      <a class="item" ng-class="{ active: nav.isSelected(2) }" href ng-click="nav.selectPage(2)">
+        <i class="food icon"></i> Menu
+      </a>
+
+      <a class="item" ng-class="{ active: nav.isSelected(3) }" href ng-click="nav.selectPage(3)">
+        <i class="user icon"></i> About
+      </a>
+
+      <a class="item" ng-class="{ active: nav.isSelected(4) }" href ng-click="nav.selectPage(4)">
+        <i class="mail icon"></i> Contact
+      </a>
+    </div>
+
+    <div id='m_btn' class="ui black labeled icon button">
+      <i class="list layout icon"></i>Menu
+    </div>
+
+    <div class="ui icon header inverted">
+        <i class='circular coffee icon inverted'></i> <b>Enjoy. Cotta's. Coffee</b>
+    </div>
+
+    <h2 class="ui header inverted">
+      <i class="coffee icon inverted"></i>
+      <div class="content">
+        Enjoy. Cotta's. Coffee
+      </div>
+    </h2>
+  </div>
+
+  <img src='images/header.jpg' id="mainImage" alt='header image' />
+</header>

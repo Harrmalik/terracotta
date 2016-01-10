@@ -1,0 +1,314 @@
+<section id="homeContent" class="ui grid three column divided" ng-show="nav.isSelected(1)">
+    <article class="column">
+        <h2 class="ui orange header center aligned">Beverages</h2>
+        <p>Our espresso Drinks are extensive...</p>
+        <a href ng-click="MenuCtrl.selectView('beverages'); nav.selectPage(2)"><img src="images/coffee.jpg" class="ui image pop circular" alt="coffee" data-content="Click for Beverages" /></a>
+    </article>
+    
+    <article class="column">
+        <h2 class="ui orange header center aligned">Food</h2>
+        <p>Grilled sandwiches made with sundried tomato and herb focaccia bread.</p>
+        <a href ng-click="MenuCtrl.selectView('food'); nav.selectPage(2)"><img src="images/focaccias.jpg" class="ui image pop circular" alt="focaccias" data-content="Click for Food" /></a>
+    </article>
+    
+    <article class="column">
+        <h2 class="ui orange header center aligned">Desserts</h2>
+        <p>Research tells us fourteen out of any ten individuals likes chocolate.</p>
+        <a href ng-click="MenuCtrl.selectView('desserts'); nav.selectPage(2)"><img src="images/muffins.jpg" class="ui image pop circular" alt="muffins" data-content="Click for Desserts" /></a>
+    </article>
+</section>
+
+<section id="menuContent" ng-show="nav.isSelected(2)">
+  <div id="foodMenu" class="ui page grid">
+    <div class="four wide desktop sixteen wide mobile column">
+      <div class="ui vertical steps" id="d_items">
+        <div class="step" ng-class="{ active: MenuCtrl.isShowing('beverages') }" href ng-click="MenuCtrl.selectView('beverages')">
+          <div class="content">
+            <div class="title">Beverages</div>
+          </div>
+        </div>
+        <div class="step" ng-class="{ active: MenuCtrl.isShowing('food') }" href ng-click="MenuCtrl.selectView('food')">
+          <div class="content">
+            <div class="title">Food</div>
+          </div>
+        </div>
+        <div class="step" ng-class="{ active: MenuCtrl.isShowing('desserts') }" href ng-click="MenuCtrl.selectView('desserts')">
+          <div class="content">
+            <div class="title">Desserts</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="ui steps" id="m_items">
+        <div class="step" ng-class="{ active: MenuCtrl.isShowing('beverages') }" href ng-click="MenuCtrl.selectView('beverages')">
+          <div class="content center aligned">
+            <p><i class="coffee icon"></i></p>
+          </div>
+        </div>
+        <div class="step" ng-class="{ active: MenuCtrl.isShowing('food') }" href ng-click="MenuCtrl.selectView('food')">
+          <div class="content">
+            <p><i class="food icon"></i></p>
+          </div>
+        </div>
+        <div class="step" ng-class="{ active: MenuCtrl.isShowing('desserts') }" href ng-click="MenuCtrl.selectView('desserts')">
+          <div class="content">
+            <p><i class="birthday icon"></i></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="twelve wide desktop twelve tablet column sixteen wide mobile">
+      <div  ng-show="MenuCtrl.isShowing('beverages')">
+        <h2 class="ui header yellow">Expressos
+          <div class="sub header">Start the day with locally brewed goodness</div>
+        </h2>
+        <div class="ui divider"></div>
+        <div class="ui feed" ng-repeat="item in MenuCtrl.items.expressos">
+          <div class="event">
+             <div class="content">
+              <div class="summary">
+                <a class="name">
+                  {[{item.name}]}
+                </a> {[{item.description}]}
+                <div class="date right aligned">
+                  {[{item.price | currency}]}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+       <div  ng-show="MenuCtrl.isShowing('beverages')"> 
+        <h2 class="ui header yellow">Hot Drinks
+          <div class="sub header">Heat up with a warm blend of drinks</div>
+        </h2>
+        <div class="ui divider"></div>
+        <div class="ui feed" ng-repeat="item in MenuCtrl.items.hot">
+          <div class="event">
+             <div class="content">
+              <div class="summary">
+                <a class="name">
+                  {[{item.name}]}
+                </a> {[{item.description}]}
+                <div class="date right aligned">
+                  {[{item.price | currency}]}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+        <div  ng-show="MenuCtrl.isShowing('beverages')">
+        <h2 class="ui header yellow">Cold Drinks
+          <div class="sub header">Cool off with our ice cold drinks</div>
+        </h2>
+        <div class="ui divider"></div>
+        <div class="ui feed" ng-repeat="item in MenuCtrl.items.cold">
+          <div class="event">
+             <div class="content">
+              <div class="summary">
+                <a class="name">
+                  {[{item.name}]}
+                </a> {[{item.description}]}
+                <div class="date right aligned">
+                  {[{item.price | currency}]}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+       <div  ng-show="MenuCtrl.isShowing('food')"> 
+        <h2 class="ui header yellow yellow">Faccacias
+          <div class="sub header">Grilled sandwiches made with sundried tomato and herb focaccia bread.</div>
+        </h2>
+        <div class="ui divider"></div>
+        <div class="ui feed" ng-repeat="item in MenuCtrl.items.focaccias">
+          <div class="event">
+             <div class="content">
+              <div class="summary">
+                <a class="name">
+                  {[{item.name}]}
+                </a> {[{item.description}]}
+                <div class="date right aligned">
+                  {[{item.price | currency}]}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+      <div ng-show="MenuCtrl.isShowing('food')">  
+        <h2 class="ui header yellow yellow">Deli
+          <div class="sub header">All sandwiches come with lettuce, tomatos, onions & mayonnaise with a side of tortilla chips, All choices are $5.95</div>
+        <div class="ui divider"></div>
+        </h2>
+        <div class="ui feed" ng-repeat="item in MenuCtrl.items.sandwiches">
+          <div class="event">
+             <div class="content">
+              <div class="summary">
+                <a class="name">
+                  {[{item.name}]}
+                </a> {[{item.description}]}
+                <div class="date right aligned">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+      <div ng-show="MenuCtrl.isShowing('food')">  
+        <h2 class="ui header yellow yellow">Breakfast Sandwich
+          <div class="sub header">Getting up to slamming breakfast on the go, all choices are $4.29</div>
+        <div class="ui divider"></div>
+        </h2>
+        <div class="ui feed" ng-repeat="item in MenuCtrl.items.breakfast">
+          <div class="event">
+             <div class="content">
+              <div class="summary">
+                <a class="name">
+                  {[{item.name}]}
+                </a> {[{item.description}]}
+                <div class="date right aligned">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+        
+      <div  ng-show="MenuCtrl.isShowing('food')">  
+        <h2 class="ui header yellow yellow">Wraps
+          <div class="sub header">Cold or heated wraps served with delicious peppers and savory bread</div>
+        </h2>
+        <div class="ui divider"></div>
+        <div class="ui feed" ng-repeat="item in MenuCtrl.items.wraps">
+          <div class="event">
+             <div class="content">
+              <div class="summary">
+                <a class="name">
+                  {[{item.name}]}
+                </a> {[{item.description}]}
+                <div class="date right aligned">
+                  {[{item.price | currency}]}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+      <div ng-show="MenuCtrl.isShowing('food')">  
+        <h2 class="ui header yellow yellow">Salads
+          <div class="sub header">Hearty greens... add something salady</div>
+        </h2>
+        <div class="ui divider"></div>
+        <div class="ui feed" ng-repeat="item in MenuCtrl.items.salads">
+          <div class="event">
+             <div class="content">
+              <div class="summary">
+                <a class="name">
+                  {[{item.name}]}
+                </a> {[{item.description}]}
+                <div class="date right aligned">
+                  {[{item.price | currency}]}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+       <div ng-show="MenuCtrl.isShowing('desserts')"> 
+        <h2 class="ui header yellow">Desserts
+          <div class="sub header">Stay in the momment with each bite of our baked goods</div>
+        </h2>
+        <div class="ui divider"></div>
+        <div class="ui feed" ng-repeat="item in MenuCtrl.items.desserts">
+          <div class="event">
+             <div class="content">
+              <div class="summary">
+                <a class="name">
+                  {[{item.name}]}
+                </a> {[{item.description}]}
+                <div class="date right aligned">
+                  {[{item.price | currency}]}
+                </div>
+              </div>
+              <div class="meta">
+                <a class="like">
+                  <i class="thumbs up outline icon"></i> {[{item.likes}]}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      </div>
+    </div>
+
+</section>
+
+<section id="aboutContent" ng-show="nav.isSelected(3)">
+    <p>
+	The Terra Cotta Coffehouse is the perfect place to make your new, favorite, near-by coffehouse. Located right in the middle of downtown Alfred, it is just <span id="purple">a few minutes walk from anywhere in the town.</span> We have several varieties of coffee, tea, chais, and a lot more. There is a deli menu, so you can <span id="purple">enjoy sandwhiches, focaccias, or wraps</span> along with salads, pastries, and desserts. Our food is freshly made and taste delicious!  <img class="ui right floated image" src="/images/home1.jpg"> </p> The selection of teas, iced drinks, soft beverages and other non-coffee items is extensive and unmatched anywhere else in the area. For many, the food and drink are the biggest reason to come here. Especially Tuesdays for the <span id="purple">deal on our famous focaccias!</span> Buy one get one half off!<p> 
+	</p>
+	<p>
+	The menu isn't the only reason to stop in.<span id="purple"> We welcome everyone to come in and just hang out.</span> The atmosphere is laid-back and cozy with a funky vibe to it. The interior is gorgeous and features a lot of student artwork from the local Alfred University, one of the finest ceramic schools in the world, such as our rafters lined with coffee mugs donated by their students. We have <span id="purple">lots of seating</span><img class="ui right floated image" src="/images/home2.jpg"> so there is always room available to relax. We have an upstairs patio and tables out front for those that enjoy feeling the sun or breeze.</p>
+    <p>The Terra Cotta Coffehouse also hosts several evetns throughout the year. Musicians are invited to come play on <span id="purple">open mic night.</span> You can even <span id="purple">reserve the upstairs for a personal party or event</span> that you would like to have. Wether you need a respite from acedemia, or you are passing through the town, the Terra Cotta Coffeehouse is a beloved part of the town and <span id="purple">well worth the visit!</span></p>
+	</p>
+
+</section>
+
+<section id="contactContent" ng-show="nav.isSelected(4)">
+    <div class="ui segment blue raised">
+      <form class="ui form flat fluid">
+        <div class="ui icon error message">
+            <i class="icon attention"></i>
+            <div class="content">
+                <div class="header">
+                  Error
+            </div>
+          </div>
+        </div>
+
+        <div class="fields two">
+          <div class="field">
+            <label for="fName">First name</label>
+            <input name="fName" type="text" placeholder="Full Name">
+          </div>
+
+          <div class="field">
+            <label for="lName">Last name</label>
+            <input name="lName" type="text" placeholder="Full Name">
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Email</label>
+          <input name="email" type="email" placeholder="name@email.com">
+        </div>
+
+        <div class="fields">
+          <div class="field ten wide">
+            <label>Message</label>
+            <textarea></textarea>
+          </div>
+        </div>
+        
+        <div id="submit" class="ui button submit labeled icon blue small">
+          <i class="icon edit"></i>
+          Submit
+        </div>
+
+      </form>
+    </div>
+</section>

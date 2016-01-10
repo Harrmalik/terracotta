@@ -1,0 +1,73 @@
+{"expressos":[
+    {"name":"Coffee", "description":"Italian, Jamaican Me Crazy, Canan Daigua Blend, Peru La Florida, Jamaican Me Crazy Decaf, Sumatra Decaf, and a special daily flavor.", "price": 1.36, "small": 2.05, "large": 2.16, "likes": 0},
+    {"name":"Expresso Shot", "description":"Darkly roasted Italian coffee", "price": 0.98, "likes": 0},
+    {"name":"Cappuccino", "description":"Espresso with steamed and frothed milk", "price": 3.20, "small" : 2.95, "large": 3.95, "likes": 0},
+    {"name":"Latte", "description":"Espresso with steamed milk and dollop of froth", "price": 3.20, "small" : 2.95, "large": 3.95, "likes": 0},
+    {"name":"Breve", "description":"Latte made with half and half", "price": 3.50, "small" : 3, "large": 4.25, "likes": 0},
+    {"name":"Mocha", "description":"Espresso, torani chocolate, steamed milk, whipped cream", "price": 3.90, "small" : 3.5, "large": 4.25, "likes": 0},
+    {"name":"Americano", "description":"Espresso with hot water", "price": 2.90, "small" : 2.5, "large": 3.25, "likes": 0},
+    {"name":"Mochaccino", "description":"Espresso, chocolate 1/2 steamed and 1/2 forthed milk", "price": 3.9, "small" : 3.5, "large": 4.25, "likes": 0}
+],
+"hot":[
+    {"name":"House Blend", "description":"locally roasted, freshly ground", "price": 1.89, "small" : 1.25, "large": 1.99, "likes": 0},
+    {"name":"Cafe au Lait", "description":"house coffee w/ milk & froth", "price": 2.40, "small" : 2.25, "large": 3.00, "likes": 0},
+    {"name":"Red Eye", "description":"house coffee w/ espresso", "price": 3.40, "small" : 2.65, "large": 4.25, "likes": 0},
+    {"name":"Steamer", "description":"steamed milk w/ flavor shot", "price": 3, "small" : 2.5, "large": 3.5, "likes": 0},
+    {"name":"Hot Cocoa", "description":"Made w/ steamed milk & whipped cream", "price": 2.95, "likes": 0},
+    {"name":"Numi Tea", "description":"assorted herbal teas - all natural!", "price": 1.75, "likes": 0},
+    {"name":"Chai", "description":"Spice, raspberry, vanilla, chocolate or no suger added vanilla; made with milk", "price": 3.50, "small" : 3.3, "large": 3.85, "likes": 0}
+],
+"cold":[
+    {"name":"Unsweetened Iced Tea", "description":"Freshly brewed, served over ice", "price": 2.50, "likes": 0},
+    {"name":"Italian Soda", "description":"Soda Water & flavor syrup", "price": 2.50, "likes": 0},
+    {"name":"Slush", "description":"Soda water, flavor syrup & ice, blended", "price": 3, "likes": 0},
+    {"name":"Cream Slush", "description":"milk, flavor syrup & ice, blended", "price": 3.25, "likes": 0},
+    {"name":"Frappe", "description":"Ice, milk & assorted coffee flavors", "price": 4.25, "likes": 0},
+    {"name":"Smoothie", "description":"Ice & assorted fruit flavors", "price": 4.25, "likes": 0},
+    {"name":"Frozen Chai", "description":"Our Chai flavors blended w/ ice & milk", "price": 4.25, "likes": 0}
+],
+"focaccias":[
+    {"name":"Chicken", "description":"Chicken, tomato, mozzarell, and pesto", "price": 3.99, "likes": 0},
+    {"name":"Chicken Cordon Bleu", "description":"Chicken, ham, swill, and honey mustard", "price": 3.99, "likes": 0},
+    {"name":"Artichoke", "description":"Artichokes, mushrooms, red peppers, provolone, and roasted red pepper sauce", "price": 3.99, "likes": 0},
+    {"name":"Eggplant", "description":"Eggplant, mushrooms, red peppers, provolone, and roasted red pepper sauce", "price": 3.99, "likes": 0},
+    {"name":"Tuna Melt", "description":"Tuna, tomato, and swiss", "price": 3.99, "likes": 0},
+    {"name":"Turkey Melt", "description":"Turkey, tomato, mozzarella, and pesto", "price": 3.99, "likes": 0},
+    {"name":"Cheeseburger", "description":"Ground chuck, tomato, onions, american, swiss, and roasted red pepper sauce", "price": 3.99, "likes": 0},
+    {"name":"Garden Burger", "description":"Garden burger, red peppers, tomato, swiss and roasted red pepper sauce", "price": 3.99, "likes": 0},
+    {"name":"Greek", "description":"Choice of chicken, beef, or egplant, tomato, onion, cucumber, feta, and tzatziki sauce.", "price": 3.99, "likes": 0},
+    {"name":"Philly", "description":"Roast beef, grilled onions, mozzarella, and roasted red pepper sauce", "price": 3.99, "likes": 0},
+    {"name":"Hawaiian", "description":"Ham, pineapple, swiss, and honey mustard", "price": 3.99, "likes": 0}
+],
+"sandwiches":[
+    {"name":"Breads", "description":"White, wheat, rye, multi-grain, sourdough"},
+    {"name":"Meats", "description":"Turkey, ham, roast beef, tuna"},
+    {"name":"Cheeses", "description":"American, cheddar,provolone, mozzarella, swiss "}
+],
+"breakfast":[
+    {"name":"Breads", "description":"Craissant, Bagel (plain, everything, sesame), Deli breads, flat bread"},
+    {"name":"Meats", "description":"Bacon, sausage, tufu chicken,turkey, ham, roast beef, tuna"},
+    {"name":"Cheeses", "description":"American, cheddar,provolone, mozzarella, swiss "}
+],
+"wraps":[
+    {"name":"Panini", "description":"Chicken, red peppers, mushrooms, red pepper sauce, greens swiss.", "price" : 6.95, "likes": 0},
+    {"name":"Chicken Caesar", "description":"Chicken, parmesian, caesar dressing, /w mixed greens", "price": 6.95, "likes": 0},
+    {"name":"Turkey BLT (Bacon Lettuce Tomatoes)", "description":"Turkey, chedder, bacon, lettuce, tomato, red pepper sauce", "price": 6.95, "likes": 0},
+    {"name":"Gyro", "description":"Chicken or beef, tomato, onion, cucumber, feta, tzatziki sauce", "price": 6.95, "likes": 0}
+],
+"salads":[
+    {"name":"Pasta", "description":"Peppers, onions, cucumbers, carrots, broccoli, olives, pesto", "price": 6.25, "likes": 0},
+    {"name":"House", "description":"Mixed greens, assorted veggies, crutons", "price": 6.25, "likes": 0},
+    {"name":"Julienne", "description":"Choice of meat & cheese, mixed greens, assorted veggies, crutons", "price": 7.25, "likes": 0},
+    {"name":"Chicken Caesar", "description":" Chicken, mixed greens, parmesian, olives, crutons, caesar dressing", "price": 6.95, "likes": 0},
+    {"name":"Fruit 'N' Yogury", "description":"Strawberries, greek yogurt, granola /w whipped cream", "price": 5.95, "likes": 0}
+],
+"desserts":[
+    {"name":"Assorted Muffins", "description":"Come try a banana nut, cinnamon chip, mountain berry, mountain cream cheese, chocolate, corn, bran, apple streusel, or whatever we have made for the day!", "price": 2.5, "likes": 0},
+    {"name":"Assorted Coffee Cakes", "description":"Doe", "price": 3.99, "likes": 0},
+    {"name":"Cookies", "description":"Doe", "price": 3.99, "likes": 0},
+    {"name":"Brownies", "description":"Doe", "price": 3.99, "likes": 0},
+    {"name":"Danishes", "description":"pick up a cream cheese, cherry cheese, apple, or bear claw.", "price": 3.99, "likes": 0},
+    {"name":"Baklava", "description":"Doe", "price": 3.99, "likes": 0}
+]
+}
